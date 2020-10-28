@@ -32,15 +32,15 @@ namespace AlexDickersonAppService
                     var configuration = config.Build();
                     int configCount1 = configuration.AsEnumerable().Count();
 
-                    //Environment.SetEnvironmentVariable("AZURE_CLIENT_ID", "32b86793-9db5-40bc-84d6-f50a87859afc");
-                    //Environment.SetEnvironmentVariable("AZURE_CLIENT_SECRET", "Vro71px9_9VPYXHCI20j6~USP-6vGdyqV-");
-                    //Environment.SetEnvironmentVariable("AZURE_TENANT_ID", "72f988bf-86f1-41af-91ab-2d7cd011db47");
+                    Environment.SetEnvironmentVariable("AZURE_CLIENT_ID", "0e414e01-14d8-4b01-b43a-123feabd4871");
+                    Environment.SetEnvironmentVariable("AZURE_CLIENT_SECRET", ".FR83M1p-Z3gs1XwI4cRFLh4-Li5_511~z");
+                    Environment.SetEnvironmentVariable("AZURE_TENANT_ID", "bae50a1b-a7fa-4a2c-b264-944feabfdd7b");
                     var test = new DefaultAzureCredential();
 
 
                     config.AddAzureAppConfiguration(options =>
                     {
-                    options.Connect(new Uri("https://amancaappconfigkv.azconfig.azure.us"), test);//.ConfigureKeyVault(kv => kv.SetCredential(test));
+                    options.Connect(new Uri("https://amancaappconfigkv.azconfig.azure.us"), test).ConfigureKeyVault(kv => kv.SetCredential(test));
                     });
 
                     //var azureServiceTokenProvider = new AzureServiceTokenProvider();
