@@ -22,6 +22,16 @@ namespace AlexDickersonAppService
             CreateHostBuilder(args).Build().Run();
         }
 
+
+        //public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        //   WebHost.CreateDefaultBuilder(args)
+        //          .ConfigureAppConfiguration((hostingContext, config) =>
+        //          {
+        //              var settings = config.Build();
+        //              config.AddAzureAppConfiguration(options =>
+        //                  options.Connect(new Uri(settings["AppConfig:Endpoint"]), new ManagedIdentityCredential()));
+        //          })
+        //          .UseStartup<Startup>();
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
@@ -32,9 +42,9 @@ namespace AlexDickersonAppService
                     var configuration = config.Build();
                     int configCount1 = configuration.AsEnumerable().Count();
 
-                    Environment.SetEnvironmentVariable("AZURE_CLIENT_ID", "0e414e01-14d8-4b01-b43a-123feabd4871");
-                    Environment.SetEnvironmentVariable("AZURE_CLIENT_SECRET", ".FR83M1p-Z3gs1XwI4cRFLh4-Li5_511~z");
-                    Environment.SetEnvironmentVariable("AZURE_TENANT_ID", "bae50a1b-a7fa-4a2c-b264-944feabfdd7b");
+                    //Environment.SetEnvironmentVariable("AZURE_CLIENT_ID", "f28f6299-23bd-47e7-9045-ce9019264461");
+                    //Environment.SetEnvironmentVariable("AZURE_CLIENT_SECRET", "Tezv1pt1~Dtp09z~6~Hp.~MH3PCyYMniR~");
+                    //Environment.SetEnvironmentVariable("AZURE_TENANT_ID", "72f988bf-86f1-41af-91ab-2d7cd011db47");
                     var credOptions = new DefaultAzureCredentialOptions { AuthorityHost = AzureAuthorityHosts.AzureGovernment };
                     var test = new  DefaultAzureCredential(credOptions);
 
@@ -42,7 +52,7 @@ namespace AlexDickersonAppService
 
                     config.AddAzureAppConfiguration(options =>
                     {
-                    options.Connect(new Uri("https://amancaappconfigkv.azconfig.azure.us"), test).ConfigureKeyVault(kv => kv.SetCredential(test));
+                        options.Connect("Endpoint=https://amancaappconfigkv.azconfig.azure.us;Id=62OG-laf-s0:aGYGQOjibaiudCRXx17v;Secret=rf2+GRmezIN74SzikOR6SEUzkgIoBJnJRWvTLk53r6o=").ConfigureKeyVault(kv => kv.SetCredential(new ManagedIdentityCredential(credOptions)));
                     });
 
                     //var azureServiceTokenProvider = new AzureServiceTokenProvider();

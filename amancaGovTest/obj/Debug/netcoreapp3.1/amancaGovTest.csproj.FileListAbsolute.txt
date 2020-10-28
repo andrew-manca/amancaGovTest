@@ -60,8 +60,8 @@ C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\D
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.pdb
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.genruntimeconfig.cache
-C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.csprojAssemblyReference.cache
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.UserSecrets.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.csproj.CoreCompileInputs.cache
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\amancaProdwebApp - Web Deploy\profile.arm.json
