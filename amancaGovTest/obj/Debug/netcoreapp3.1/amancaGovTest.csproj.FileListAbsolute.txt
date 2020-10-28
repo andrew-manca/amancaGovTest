@@ -56,9 +56,8 @@ C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\D
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
-C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.csproj.CoreCompileInputs.cache
-C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.Views.pdb
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.dll
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.pdb
 C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.genruntimeconfig.cache
+C:\Users\anmanca\Documents\Customers\amancaGov\amancaGovTest\amancaGovTest\obj\Debug\netcoreapp3.1\amancaGovTest.csprojAssemblyReference.cache
