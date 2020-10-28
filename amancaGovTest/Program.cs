@@ -35,7 +35,9 @@ namespace AlexDickersonAppService
                     Environment.SetEnvironmentVariable("AZURE_CLIENT_ID", "0e414e01-14d8-4b01-b43a-123feabd4871");
                     Environment.SetEnvironmentVariable("AZURE_CLIENT_SECRET", ".FR83M1p-Z3gs1XwI4cRFLh4-Li5_511~z");
                     Environment.SetEnvironmentVariable("AZURE_TENANT_ID", "bae50a1b-a7fa-4a2c-b264-944feabfdd7b");
-                    var test = new DefaultAzureCredential();
+                    var credOptions = new DefaultAzureCredentialOptions { AuthorityHost = AzureAuthorityHosts.AzureGovernment };
+                    var test = new  DefaultAzureCredential(credOptions);
+
 
 
                     config.AddAzureAppConfiguration(options =>
