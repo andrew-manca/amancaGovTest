@@ -52,7 +52,7 @@ namespace AlexDickersonAppService
 
                     config.AddAzureAppConfiguration(options =>
                     {
-                        options.Connect("Endpoint=https://amancaappconfigkv.azconfig.azure.us;Id=62OG-laf-s0:aGYGQOjibaiudCRXx17v;Secret=rf2+GRmezIN74SzikOR6SEUzkgIoBJnJRWvTLk53r6o=").ConfigureKeyVault(kv => kv.SetCredential(new ManagedIdentityCredential(credOptions)));
+                        options.Connect("Endpoint=https://amancaappconfigkv.azconfig.azure.us;Id=62OG-laf-s0:aGYGQOjibaiudCRXx17v;Secret=rf2+GRmezIN74SzikOR6SEUzkgIoBJnJRWvTLk53r6o=").ConfigureKeyVault(kv => kv.SetCredential(new ManagedIdentityCredential()));
                     });
 
                     //var azureServiceTokenProvider = new AzureServiceTokenProvider();
