@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using amancaGovTest.Models;
+using Microsoft.Extensions.Configuration;
 
 namespace amancaGovTest.Controllers
 {
@@ -13,9 +14,12 @@ namespace amancaGovTest.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration Config;
+
+        public HomeController(ILogger<HomeController> logger, IConfiguration config)
         {
             _logger = logger;
+            Config = config;
         }
 
         public IActionResult Index()
@@ -26,6 +30,13 @@ namespace amancaGovTest.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [HttpGet]
+        [Route("GetSecret")]
+        public string GetSecret(string secretName)
+        {
+            return Config[secretName];
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
