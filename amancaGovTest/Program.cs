@@ -49,7 +49,7 @@ namespace AlexDickersonAppService
                             azureServiceTokenProvider.KeyVaultTokenCallback));
 
                     config.AddAzureKeyVault(
-                        $"https://{configuration["KeyVaultName"]}.vault.azure.net/",
+                        $"https://amancakv.vault.usgovcloudapi.net/",
                         keyVaultClient,
                         new DefaultKeyVaultSecretManager());
 
