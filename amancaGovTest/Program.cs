@@ -40,7 +40,7 @@ namespace AlexDickersonAppService
 
                     config.AddAzureAppConfiguration(options =>
                     {
-                        options.Connect(new Uri("https://amancaappconfigkv.azconfig.azure.us"), test).ConfigureKeyVault(kv => kv.SetCredential(test));
+                    options.Connect(new Uri("https://amancaappconfigkv.azconfig.azure.us"), test);//.ConfigureKeyVault(kv => kv.SetCredential(test));
                     });
 
                     //var azureServiceTokenProvider = new AzureServiceTokenProvider();
